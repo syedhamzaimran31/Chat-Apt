@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     MessageAdapter messageAdapter;
 
     public static final MediaType JSON = MediaType.get("application/json");
-    String OPENAI_API_KEY = "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"; // Replace this with your OpenAI API key
+    String OPENAI_API_KEY = ""; // Replace this with your OpenAI API key
 
     OkHttpClient client = new OkHttpClient();
 
