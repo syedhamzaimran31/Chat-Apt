@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_6sdp"
+    >
+
+    <LinearLayout
+        android:id="@+id/left_chat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_70sdp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/black"
+        android:padding="10dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/left_chat_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_chat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/purple_500"
+        android:padding="@dimen/_8sdp"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/right_chat_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

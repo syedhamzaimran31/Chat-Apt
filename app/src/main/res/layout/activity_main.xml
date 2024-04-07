@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btm_Layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp" />
+
+    <com.google.android.material.textview.MaterialTextView
+
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_250sdp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="Welcome to ChatAPT\nTry it now:"
+        android:textSize="@dimen/_25sdp" />
+
+    <RelativeLayout
+        android:id="@+id/btm_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentBottom="true">
+
+
+
+            <EditText
+                android:id="@+id/msg_edit_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:minHeight="@dimen/_48sdp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Write here"
+                android:textSize="@dimen/_25sdp"
+                android:layout_toLeftOf="@+id/sendbtn"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_corner" />
+
+        <ImageButton
+            android:id="@+id/sendbtn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/rounded_corner"
+            android:contentDescription="@android:string/yes"
+            android:src="@drawable/baseline_send_24" />
+    </RelativeLayout>
+
+</RelativeLayout>
